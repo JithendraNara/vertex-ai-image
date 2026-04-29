@@ -117,7 +117,7 @@ export async function generateImages(options: {
   personGeneration?: PersonGeneration;
   accessToken: string;
 }): Promise<ImageResult[]> {
-  const region = options.region || 'global';
+  const region = options.region || 'us-west2';
   const model = options.model || 'gemini-3.1-flash-image-preview';
   const regionHost = region === 'global' ? 'aiplatform.googleapis.com' : `${region}-aiplatform.googleapis.com`;
   const endpoint = `https://${regionHost}/v1/projects/${options.projectId}/locations/${region}/publishers/google/models/${model}:generateContent`;
