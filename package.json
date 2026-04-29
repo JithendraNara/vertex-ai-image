@@ -1,0 +1,28 @@
+{
+  "name": "vertex-ai-image",
+  "version": "1.0.0",
+  "description": "Free image generation via Vertex AI Gemini 3.1 Flash Image",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "vertex-ai-image": "src/index.ts"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "vertex-ai",
+    "image-generation",
+    "gemini",
+    "openclaw",
+    "claude-code",
+    "hermes",
+    "mcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "openclaw": {
+    "extensions": ["./src/integrations/openclaw.ts"]
+  }
+}
