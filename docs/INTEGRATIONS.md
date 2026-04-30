@@ -14,7 +14,7 @@ claude mcp add vertex-image --transport stdio -- npx -y vertex-ai-image claude-c
 
 ```bash
 export VERTEX_AI_PROJECT_ID="your-gcp-project-id"
-export VERTEX_AI_REGION="global"
+export VERTEX_AI_REGION="us-west2"
 export VERTEX_AI_MODEL="gemini-3.1-flash-image-preview"
 export VERTEX_AI_SERVICE_ACCOUNT_JSON='{"type":"service_account",...}'
 ```
@@ -41,7 +41,7 @@ Generate an image of a sunset over the ocean with aspect ratio 16:9
         "enabled": true,
         "config": {
           "projectId": "your-gcp-project-id",
-          "region": "global",
+          "region": "us-west2",
           "model": "gemini-3.1-flash-image-preview",
           "serviceAccountJson": "paste-json-here"
         }
